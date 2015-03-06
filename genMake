@@ -1,0 +1,17 @@
+#!/bin/bash
+
+qmake -project -o SistemaGraficoBasico.pro
+echo "">>	SistemaGraficoBasico.pro
+echo "MOC_DIR = build/ui" >>	SistemaGraficoBasico.pro
+echo "OBJECTS_DIR = build" >>	SistemaGraficoBasico.pro
+echo "UI_HEADERS_DIR = include/ui/base" >>	SistemaGraficoBasico.pro
+echo "UI_SOURCES_DIR = ui" >>	SistemaGraficoBasico.pro
+echo "CONFIG += debug" >>	SistemaGraficoBasico.pro
+
+qmake SistemaGraficoBasico.pro
+#qmake -spec macx-g++
+echo "make $1"
+make $1
+
+rm Makefile
+rm SistemaGraficoBasico.pro

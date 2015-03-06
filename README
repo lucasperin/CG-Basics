@@ -1,0 +1,24 @@
+Para compilar o projeto basta executar o script "./genMake all"
+
+Para dar clean no projeto basta "./genMake clean"
+
+Dependencias: Qt4
+
+***Para o genMake funcionar deve-se ter o qmake instalado e definido no PATH do sistema, caso contrario editar o genMake
+***e adicionar o caminho do executavel qmake.
+
+
+Funções de Rotação:
+
+Para executar a rotação em 3D, definir os seguintes parâmetros:
+Centro de rotação: Opção Centro do Objeto ou um ponto arbitrário qualquer (selecionar o radio button respectivo).
+Eixo de rotação: um Vetor que corresponda a um eixo de direção.. ex: x(1,0,0) y(0,1,0) ou z(0,0,1)
+
+Como não existe ainda a implementação de perspectiva, para melhor observar a rotação da Window, usar o centro da mesma com eixos x, y ou z.
+De qualquer forma, utilizando pontos arbitrários funciona, no entanto, fica difícil de observar o movimento pela falta de perspectiva.
+
+Objectos 3D:
+no menu Arquivo, selecione a opção "importar objeto..."
+Junto ao projeto está um arquivo "subzero-1.obj" para ser usado de exemplo.
+
+Note que o objeto3D "subzero" aparecerá na origem do sistema e com tamanho pequeno. Movimente e escalone o tamanho do mesmo para melhor vizualização a vontade.
